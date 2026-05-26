@@ -4,7 +4,7 @@
 
 GSmartMagDL is a computational framework for reconstructing continuous magnetic-field maps from sparse, heterogeneous, and crowdsourced smartphone magnetometer observations. The method is designed for realistic acquisition conditions in which multiple users and devices traverse the same region of interest along irregular, non-structured trajectories. The fused observation map is provided to a deep reconstruction network guided by a mutual-information-based loss, with the goal of preserving localized magnetic anomaly structure under heterogeneous input and geographically varying magnetic backgrounds.
 
-![Conceptual workflow](docs/concept_gsmartmagdl.png)
+![Conceptual GSmartMagDL workflow](docs/concept_gsmartmagdl.png)
 
 The repository contains the MATLAB simulation and data-generation components used to create theoretical magnetic maps, heterogeneous trajectory/device samples, and fused observation maps, together with a Python/PyTorch inference example for loading a fused map and reconstructing the corresponding magnetic map using a trained GSmartMagDL model.
 
