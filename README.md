@@ -4,7 +4,7 @@
 
 GSmartMagDL is a computational framework for reconstructing continuous magnetic-field maps from sparse, heterogeneous, and crowdsourced smartphone magnetometer observations. The method is designed for realistic acquisition conditions in which multiple users and devices traverse the same region of interest along irregular, non-structured trajectories. The fused observation map is provided to a deep reconstruction network guided by a mutual-information-based loss, with the goal of preserving localized magnetic anomaly structure under heterogeneous input and geographically varying magnetic backgrounds.
 
-![Conceptual GSmartMagDL workflow](docs/concept_gmartmagdl.png)
+![Conceptual GSmartMagDL workflow](doc/concept_gmartmagdl.png)
 
 The repository contains the MATLAB simulation and data-generation components used to create theoretical magnetic maps, heterogeneous trajectory/device samples, and fused observation maps, together with a Python/PyTorch inference example for loading a fused map and reconstructing the corresponding magnetic map using a trained GSmartMagDL model.
 
@@ -36,7 +36,7 @@ GSmartMagDL addresses magnetic reconstruction under crowdsourced acquisition, wh
 3. **MI-guided deep reconstruction** — reconstruction of a continuous magnetic map using a mutual-information-guided learning objective that emphasizes spatially informative regions.
 4. **Geographic generalization** — application of a trained model to held-out geomagnetic settings without location-specific retraining.
 
-![GSmartMagDL framework](docs/gsmart_framework.png)
+![GSmartMagDL framework](doc/gsmart_framework.png)
 
 ---
 
@@ -82,7 +82,7 @@ gsmartmagdl/
 │   ├── fminsearchcon.m
 │   └── my_norm.m
 │
-└── docs/
+└── doc/
     ├── concept_gsmartmagdl.png
     ├── gsmart_framework.png
     ├── kursk_fused_input.png
@@ -234,7 +234,7 @@ The provided example corresponds to the Kursk held-out geographic validation cas
 
 | Fused input map | GSmartMagDL reconstruction | Theoretical reference |
 |---|---|---|
-| ![Kursk fused input](docs/kursk_fused_input.png) | ![Kursk prediction](docs/kursk_gsmartmagdl_prediction.png) | ![Kursk theoretical reference](docs/kursk_theoretical_reference.png) |
+| ![Kursk fused input](doc/kursk_fused_input.png) | ![Kursk prediction](doc/kursk_gsmartmagdl_prediction.png) | ![Kursk theoretical reference](doc/kursk_theoretical_reference.png) |
 
 ---
 
